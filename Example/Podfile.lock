@@ -1,0 +1,16 @@
+PODS:
+  - VPNDetector (0.1.0)
+
+DEPENDENCIES:
+  - VPNDetector (from `../`)
+
+EXTERNAL SOURCES:
+  VPNDetector:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  VPNDetector: 5a3984a0db741d512cb5bcfa3c141e1e8a12c7a4
+
+PODFILE CHECKSUM: bb0705c28d28d57e2939bf682c5fe2a0bacc36e7
+
+COCOAPODS: 1.5.2

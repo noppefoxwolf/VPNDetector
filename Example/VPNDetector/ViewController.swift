@@ -7,18 +7,29 @@
 //
 
 import UIKit
+import VPNDetector
 
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+final class ViewController: UIViewController {
+  private lazy var label: UILabel = .init(frame: view.bounds)
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    
+    label.textAlignment = .center
+    view.addSubview(label)
+    
+    let nc = NotificationCenter.default
+    nc.addObserver(self,
+                   selector: #selector(didBecomeActive),
+                   name: .UIApplicationDidBecomeActive,
+                   object: nil)
+  }
+  
+  @objc func didBecomeActive(_ notificaiton: Notification) {
+    if VPNDetector().isRunning {
+      label.text = "🏃‍♂️ Running VPN."
+    } else {
+      label.text = "🛑 Not running VPN."
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+  }
 }
-
