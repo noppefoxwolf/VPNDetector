@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'VPNDetector_Example' do
+  pod 'VPNDetector', :path => '../'
+
+  target 'VPNDetector_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
