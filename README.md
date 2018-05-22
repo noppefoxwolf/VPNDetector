@@ -1,5 +1,7 @@
 # VPNDetector
 
+![](https://github.com/noppefoxwolf/VPNDetector/blob/master/meta/record.gif)
+
 [![CI Status](https://img.shields.io/travis/noppefoxwolf/VPNDetector.svg?style=flat)](https://travis-ci.org/noppefoxwolf/VPNDetector)
 [![Version](https://img.shields.io/cocoapods/v/VPNDetector.svg?style=flat)](https://cocoapods.org/pods/VPNDetector)
 [![License](https://img.shields.io/cocoapods/l/VPNDetector.svg?style=flat)](https://cocoapods.org/pods/VPNDetector)
